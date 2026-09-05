@@ -1,0 +1,262 @@
+/**
+ * Japon Pop WS Theme — GTK3/GTK4 (Adwaita) color override
+ * 90s Japanese minimal + Pop workspace pill accents
+ */
+
+@define-color background #141210;
+@define-color foreground #d1c8b0;
+
+@define-color black #141210;
+@define-color red #c4682a;
+@define-color green #3a8a8a;
+@define-color yellow #a89030;
+@define-color blue #3a8a8a;
+@define-color magenta #a89030;
+@define-color cyan #3a8a8a;
+@define-color white #d1c8b0;
+@define-color bright_black #2a2620;
+@define-color bright_red #c4682a;
+@define-color bright_green #3a8a8a;
+@define-color bright_yellow #a89030;
+@define-color bright_blue #3a8a8a;
+@define-color bright_magenta #a89030;
+@define-color bright_cyan #3a8a8a;
+@define-color bright_white #e3ded5;
+
+@define-color accent_bg_color @orange;
+@define-color accent_fg_color @background;
+@define-color accent_color @cyan;
+
+@define-color window_bg_color @background;
+@define-color window_fg_color @foreground;
+
+@define-color view_bg_color @black;
+@define-color view_fg_color @foreground;
+@define-color sidebar_bg_color @black;
+@define-color sidebar_fg_color @foreground;
+@define-color sidebar_backdrop_color @black;
+@define-color sidebar_shade_color @black;
+
+@define-color headerbar_bg_color @background;
+@define-color headerbar_fg_color @foreground;
+@define-color headerbar_backdrop_color @black;
+@define-color headerbar_shade_color @black;
+@define-color card_bg_color @background;
+@define-color card_fg_color @foreground;
+
+@define-color popover_bg_color @black;
+@define-color popover_fg_color @foreground;
+
+@define-color destructive_bg_color @red;
+@define-color destructive_fg_color @background;
+
+@define-color success_bg_color @green;
+@define-color success_fg_color @background;
+
+@define-color warning_bg_color @yellow;
+@define-color warning_fg_color @background;
+
+@define-color error_bg_color @red;
+@define-color error_fg_color @background;
+
+@define-color dialog_bg_color @background;
+@define-color dialog_fg_color @foreground;
+
+@define-color borders alpha(@foreground, 0.1);
+
+@define-color theme_fg_color @foreground;
+@define-color theme_text_color @foreground;
+@define-color theme_bg_color @background;
+@define-color theme_base_color @black;
+@define-color theme_selected_bg_color @orange;
+@define-color theme_selected_fg_color @background;
+@define-color insensitive_bg_color @background;
+@define-color insensitive_fg_color @bright_black;
+@define-color insensitive_base_color @black;
+@define-color theme_unfocused_fg_color @foreground;
+@define-color theme_unfocused_text_color @foreground;
+@define-color theme_unfocused_bg_color @background;
+@define-color theme_unfocused_base_color @black;
+@define-color theme_unfocused_selected_bg_color @orange;
+@define-color theme_unfocused_selected_fg_color @background;
+@define-color unfocused_insensitive_color @bright_black;
+@define-color unfocused_borders alpha(@foreground, 0.1);
+@define-color warning_color @yellow;
+@define-color error_color @red;
+@define-color success_color @green;
+@define-color destructive_color @red;
+
+@define-color content_view_bg @black;
+@define-color text_view_bg @black;
+
+messagedialog {
+    background-color: @dialog_bg_color;
+}
+
+messagedialog label {
+    color: @dialog_fg_color;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+messagedialog .secondary-text {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+messagedialog button {
+    background-color: @black;
+    color: @foreground;
+    border: 1px solid @bright_black;
+    padding: 10px;
+}
+
+messagedialog button:hover {
+    background-color: @orange;
+}
+
+banner revealer widget {
+    background: @bright_black;
+    padding: 5px;
+    color: @foreground;
+}
+
+alertdialog.background {
+    background-color: @dialog_bg_color;
+    color: @dialog_fg_color;
+}
+
+alertdialog .titlebar {
+    background-color: @headerbar_bg_color;
+    color: @headerbar_fg_color;
+}
+
+alertdialog box {
+    background-color: @dialog_bg_color;
+}
+
+alertdialog label {
+    color: @dialog_fg_color;
+}
+
+filechooser .dialog-action-box {
+    border-top: 1px solid @bright_black;
+}
+
+filechooser .dialog-action-box:backdrop {
+    border-top-color: @black;
+}
+
+filechooser #pathbarbox {
+    border-bottom: 1px solid @bright_black;
+}
+
+filechooserbutton:drop(active) {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+toast {
+    background-color: @black;
+    color: @foreground;
+}
+
+toast button.circular.flat.image-button:hover {
+    color: @background;
+    background-color: @red;
+}
+
+@define-color menu_hover_color rgba(196, 104, 42, 0.28);
+
+@define-color sidebar_focus_color #c4682a;
+
+menuitem:hover,
+modelbutton:hover,
+modelbutton.flat:hover,
+row:hover,
+placessidebar row:hover,
+.nautilus-window placessidebar row:hover,
+.nautilus-window row:hover {
+    background-color: @menu_hover_color;
+    border-radius: 3px;
+}
+
+placessidebar *:selected,
+placessidebar row:selected,
+placessidebar row:focus,
+.nautilus-window placessidebar *:selected,
+.nautilus-window placessidebar row:selected,
+.nautilus-window placessidebar row:focus,
+.nautilus-window placessidebar row:selected:hover,
+.sidebar *:selected,
+.sidebar row:selected,
+.navigation-sidebar *:selected,
+.navigation-sidebar row:selected,
+list row:selected,
+list *:selected,
+row:selected:focus,
+row:selected,
+row:focus,
+.view:selected,
+treeview.view:selected,
+.nautilus-window .view:selected {
+    background-color: @sidebar_focus_color;
+    background-image: none;
+    border-radius: 3px;
+}
+
+placessidebar *:selected label,
+.nautilus-window placessidebar *:selected label,
+.sidebar *:selected label,
+.navigation-sidebar *:selected label,
+row:selected label,
+row:selected image,
+.view:selected label {
+    color: @foreground;
+}
+
+.nautilus-canvas-item:hover,
+.nautilus-window .nautilus-canvas-item:hover,
+.nautilus-window .nautilus-canvas-item:hover:selected,
+.nautilus-grid-view gridview > child.activatable:hover {
+    background-color: @menu_hover_color;
+    border-radius: 8px;
+}
+
+.nautilus-canvas-item:selected,
+.nautilus-canvas-item:focus,
+.nautilus-canvas-item:selected:focus,
+.nautilus-window .nautilus-canvas-item:selected,
+.nautilus-window .nautilus-canvas-item:focus,
+.nautilus-window .nautilus-canvas-item:selected:focus,
+.nautilus-grid-view gridview > child:selected,
+.nautilus-grid-view gridview > child:selected:hover,
+.nautilus-grid-view gridview > child:focus,
+.nautilus-grid-view gridview > child:selected:focus {
+    background-color: @sidebar_focus_color;
+    background-image: none;
+    border-radius: 8px;
+}
+
+.nautilus-canvas-item:selected label,
+.nautilus-canvas-item:selected image,
+.nautilus-window .nautilus-canvas-item:selected label,
+.nautilus-window .nautilus-canvas-item:selected image,
+.nautilus-grid-view gridview > child:selected label,
+.nautilus-grid-view gridview > child:selected image {
+    color: @foreground;
+}
+
+* {
+    border-radius: 0;
+}
+
+.titlebar button.close,
+.titlebar button.minimize,
+.titlebar button.maximize,
+headerbar button.close,
+headerbar button.minimize,
+headerbar button.maximize,
+windowcontrols button {
+    border-radius: 9999px;
+}

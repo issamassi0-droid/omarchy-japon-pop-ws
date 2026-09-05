@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "japon_pop_ws.workspace",
+  "name": "Japon Pop WS",
+  "version": "1.0.0",
+  "author": "issamassi0-droid",
+  "description": "Pop-style workspace pills on Japon 90s minimal palette.",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "workspace.qml"
+  },
+  "barWidget": {
+    "displayName": "Japon Pop WS",
+    "description": "Pop workspace pill indicators (Japon palette)",
+    "category": "Compositor",
+    "allowMultiple": false
+  }
+}
