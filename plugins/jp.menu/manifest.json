@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "jp.menu",
+  "name": "Jp Menu",
+  "version": "1.0.0",
+  "author": "issamassi0-droid",
+  "description": "Menu launcher — full-height bar icon aligned with workspace pills",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Jp Menu",
+    "description": "Menu launcher icon",
+    "category": "Utility",
+    "allowMultiple": false
+  }
+}
