@@ -1,29 +1,19 @@
-# Japon Pop WS Theme
+# Japon WS2 Theme
 
-Japon 90s Japanese minimal palette + Pop workspace pill styling.
+Second generation of Japon workspace–derived palette.
 
-## Palette
+## Palette (from pop.workspace refined)
 - Background: #141210
 - Foreground: #d1c8b0
-- Darken Orange: #c4682a
-- Darken Cyan: #3a8a8a
-- Darken Yellow: #a89030
-- Muted: #7a7060
-- Border: #8a7a60
+- Focused (orange): fill #c4682a@0.4 / border #c4682a@0.75 / text #e09860
+- Occupied (yellow): fill #a89030@0.4 / border #a89030@0.75 / text #c9b26a
+- Unoccupied (muted): fill #7a7060@0.3 / border #8a7a60@0.7 / text #a89d8c
+- Hover (cyan): fill #3a8a8a@0.55 / border #3a8a8a@1.0
 
-## Pop workspace pills
-- Rounded pill indicators (radius: 7)
-- Hover / focused / occupied / urgent states
-- Orange accent for active workspace
-
-## Themed components
-- Hyprland (borders, decoration, wallpaper via swaybg)
-- Quickshell (Theme.qml + shell.qml with Pop workspace pills)
-- GTK3/GTK4 (gtk.css)
-- Terminal: Alacritty, Kitty, Foot, Ghostty
-- Tmux, Wofi, VS Code
+## Themed
+Hyprland, Quickshell, GTK3/GTK4, Alacritty, Kitty, Foot, Ghostty, Tmux, Wofi, VS Code
 
 ## Usage
 ```bash
-omarchy theme set japon_pop_ws
+omarchy theme set japon_ws2
 ```

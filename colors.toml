@@ -1,5 +1,6 @@
 # colors.toml
-# Omarchy Theme - Japon Pop WS (Japon palette + Pop workspace pills)
+# Omarchy Theme - Japon WS2
+# Palette derived from pop.workspace plugin refined colors
 
 # Base and Background
 background = "#141210"
@@ -9,11 +10,11 @@ foreground = "#d1c8b0"
 selection_foreground = "#141210"
 selection_background = "#c4682a"
 
-# Accent — darken orange as primary
+# Accent — primary orange from focused workspace
 accent = "#c4682a"
 cursor = "#d1c8b0"
 
-# ANSI palette (0-15) for terminals (foot, alacritty, kitty, tmux, ...)
+# ANSI palette — orange/cyan/yellow triad from workspace pills
 color0  = "#141210"
 color1  = "#c4682a"
 color2  = "#3a8a8a"
@@ -31,22 +32,25 @@ color13 = "#a89030"
 color14 = "#3a8a8a"
 color15 = "#e3ded5"
 
-# Surfaces
+# Surfaces — derived from workspace pill fills/borders
 surface0 = "#141210"
 surface1 = "#1e1c18"
 surface2 = "#2a2620"
 surface3 = "#7a7060"
 
-# Borders (1px, alpha 0.6)
+# Borders
 border = "#8a7a60"
-border_alpha = "0.6"
+border_alpha = "0.7"
 
-# Text and Icons
+# Text
 text_primary = "#d1c8b0"
 text_secondary = "#7a7060"
 icon = "#d1c8b0"
 
-# 90s Japanese Minimal — desaturated accents
-orange = "#c4682a"
-cyan   = "#3a8a8a"
-yellow = "#a89030"
+# Workspace-derived accents
+orange   = "#c4682a"
+cyan     = "#3a8a8a"
+yellow   = "#a89030"
+text_focused   = "#e09860"
+text_occupied  = "#c9b26a"
+text_unoccupied = "#a89d8c"

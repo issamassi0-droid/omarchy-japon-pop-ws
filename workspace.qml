@@ -61,14 +61,14 @@ BarWidget {
   readonly property int pillGap: 1
 
   // Japon palette — pills tuned to be visible on the near-black bar
-  readonly property color bgColor: Qt.rgba(122/255, 112/255, 96/255, 0.22)
-  readonly property color bgBorder: Qt.rgba(138/255, 122/255, 96/255, 0.6)
-  readonly property color hoverColor: Qt.rgba(58/255, 138/255, 138/255, 0.45)
+  readonly property color bgColor: Qt.rgba(122/255, 112/255, 96/255, 0.3)
+  readonly property color bgBorder: Qt.rgba(138/255, 122/255, 96/255, 0.7)
+  readonly property color hoverColor: Qt.rgba(58/255, 138/255, 138/255, 0.55)
   readonly property color hoverBorder: Qt.rgba(58/255, 138/255, 138/255, 1.0)
-  readonly property color occupiedColor: Qt.rgba(168/255, 144/255, 48/255, 0.3)
-  readonly property color occupiedBorder: Qt.rgba(168/255, 144/255, 48/255, 0.6)
-  readonly property color focusColor: Qt.rgba(196/255, 104/255, 42/255, 0.3)
-  readonly property color focusBorder: Qt.rgba(196/255, 104/255, 42/255, 0.6)
+  readonly property color occupiedColor: Qt.rgba(168/255, 144/255, 48/255, 0.4)
+  readonly property color occupiedBorder: Qt.rgba(168/255, 144/255, 48/255, 0.75)
+  readonly property color focusColor: Qt.rgba(196/255, 104/255, 42/255, 0.4)
+  readonly property color focusBorder: Qt.rgba(196/255, 104/255, 42/255, 0.75)
   readonly property color urgentColor: "#c4682a"
   readonly property color urgentBorder: "#a89030"
   readonly property color glowColor: "#c4682a"
@@ -124,7 +124,7 @@ BarWidget {
               anchors.centerIn: parent
               text: pill.modelData === 10 ? "0" : String(pill.modelData)
               // same hue as the pill bg/border, muted but brighter than fill
-              color: pill.focused ? "#d68a52" : (pill.occupied ? "#bda65c" : "#9a8f7c")
+              color: pill.focused ? "#e09860" : (pill.occupied ? "#c9b26a" : "#a89d8c")
               font.family: root.ff
               font.pixelSize: Style.font.body
               font.bold: pill.focused

@@ -1,15 +1,19 @@
-# japon_pop_ws palette — single source of truth
-# 90s Japanese minimal + Pop workspace pills
+# japon_ws2 palette — workspace pill–derived
 # Ordered dark -> light
 
-base    = #141210   # (20,18,16)    background / darkest
+base    = #141210   # (20,18,16)    background
 surface = #1e1c18   # (30,28,24)    panels, menus
 surface2= #2a2620   # (42,38,32)    elevated, borders
-muted   = #7a7060   # (122,112,96)  dimmed foreground
-border  = #8a7a60   # (138,122,96)  hairline borders
-text    = #d1c8b0   # (209,200,176) foreground / lightest
+muted   = #7a7060   # (122,112,96)  unoccupied fill
+border  = #8a7a60   # (138,122,96)  unoccupied border
+text    = #d1c8b0   # (209,200,176) foreground
 
-# Accents (desaturated/darkened)
-orange  = #c4682a   # (196,104,42)  darken orange
-cyan    = #3a8a8a   # (58,138,138)  darken cyan
-yellow  = #a89030   # (168,144,48)  darken yellow
+# Workspace pill–derived accents
+orange   = #c4682a   # focused fill (0.4) / border (0.75)
+cyan     = #3a8a8a   # hover fill (0.55) / border (full)
+yellow   = #a89030   # occupied fill (0.4) / border (0.75)
+
+# Number text colors
+text_focused   = #e09860
+text_occupied  = #c9b26a
+text_unoccupied = #a89d8c

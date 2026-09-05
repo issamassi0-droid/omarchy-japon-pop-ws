@@ -1,13 +1,10 @@
-# alacritty.toml — Japon Pop WS theme
+# alacritty.toml — Japon WS2
 [colors]
 primary = { background = "#141210", foreground = "#d1c8b0" }
-
 normal = { black = "#141210", red = "#c4682a", green = "#3a8a8a", yellow = "#a89030", blue = "#3a8a8a", magenta = "#a89030", cyan = "#3a8a8a", white = "#d1c8b0" }
 bright = { black = "#2a2620", red = "#c4682a", green = "#3a8a8a", yellow = "#a89030", blue = "#3a8a8a", magenta = "#a89030", cyan = "#3a8a8a", white = "#e3ded5" }
-
 [window]
 padding = { x = 10, y = 10 }
 decorations = "None"
-
 [font]
 size = 12

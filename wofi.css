@@ -1,46 +1,9 @@
-/* wofi.css — Japon Pop WS theme */
-* {
-    border: none;
-    font-family: "JetBrainsMono Nerd Font", sans-serif;
-}
-
-window {
-    margin: 0px;
-    border: 1px solid rgba(196, 104, 42, 0.8);
-    background-color: rgba(20, 18, 16, 0.95);
-    border-radius: 0px;
-}
-
-#input {
-    padding: 4px;
-    margin: 4px;
-    border: 1px solid rgba(196, 104, 42, 0.6);
-    color: #d1c8b0;
-    background-color: #1e1c18;
-}
-
-#inner-box {
-    margin: 4px;
-    border: none;
-    background-color: transparent;
-}
-
-#outer-box {
-    margin: 2px;
-    border: none;
-    background-color: transparent;
-}
-
-#scroll {
-    margin: 0px;
-    border: none;
-}
-
-#text {
-    margin: 2px;
-    color: #d1c8b0;
-}
-
-#entry:selected {
-    background-color: #c4682a;
-}
+/* wofi.css — Japon WS2 */
+* { border: none; font-family: "JetBrainsMono Nerd Font", sans-serif; }
+window { margin: 0; border: 1px solid rgba(196,104,42,0.75); background-color: rgba(20,18,16,0.97); border-radius: 0; }
+#input { padding: 4px; margin: 4px; border: 1px solid rgba(196,104,42,0.6); color: #d1c8b0; background-color: #1e1c18; }
+#inner-box { margin: 4px; border: none; background-color: transparent; }
+#outer-box { margin: 2px; border: none; background-color: transparent; }
+#scroll { margin: 0; border: none; }
+#text { margin: 2px; color: #d1c8b0; }
+#entry:selected { background-color: #c4682a; }
